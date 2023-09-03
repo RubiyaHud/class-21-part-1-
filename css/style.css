@@ -1,0 +1,547 @@
+/* All common CSS start */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 0.8;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+/* All common CSS end */
+
+
+/* My CSS start */
+
+/* Header part start */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    /*black*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+
+    /* for hover effect */
+    transition: 0.5s;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: #00e0d0;
+
+}
+
+/* Sticky header */
+.sticky_header {
+    background: linear-gradient(to right, rgba(9, 5, 47, 1), rgba(49, 29, 94, 1));
+
+    /* 1s is the delay/duration */
+    animation: alamin 1s;
+}
+
+@keyframes alamin {
+    from {
+        top: -100px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+
+/* Header part end */
+
+/* Back to Top start  */
+.back-to-top {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+.back-to-top i {
+    font-size: 50px;
+    color: #00e0d0;
+}
+
+/* Back to Top end */
+
+/* Banner part start */
+#banner_part {
+
+    background: url(../images/banner_image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner_overlay {
+    padding-top: 230px;
+    padding-bottom: 210px;
+    background: linear-gradient(to right, rgba(9, 5, 47, 0.85), rgba(49, 29, 94, 0.85));
+}
+
+.banner_text h1 {
+    font-weight: 900;
+    /*black*/
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    position: relative;
+}
+
+.banner_text h1::before {
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+
+    height: 1px;
+    width: 50px;
+    background: #00e0d0;
+    content: "";
+}
+
+.banner_text p {
+    font-weight: 300;
+    /*Light*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+
+    line-height: 24px;
+    padding: 0 191px;
+    /*to break the paragraph according to the psd design*/
+
+    margin: 50px 0;
+}
+
+.banner_text a {
+    /*Regular*/
+    font-weight: 400;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 16px;
+
+    padding: 14px 15px;
+    border-radius: 4px;
+    border: 1px solid #00e0d0;
+
+    color: #00e0d0;
+    text-transform: uppercase;
+}
+
+/* Styling the default Slick dots*/
+/* https://codepen.io/velvet-cerise/pen/bGNjrxV */
+
+/* .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+
+    list-style-type: none;
+}
+
+li {
+    margin: 0 0.25rem;
+
+}
+
+button {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    padding: 0;
+
+    border: 1px solid #ffffff;
+    border-radius: 100%;
+    background-color: #211543;
+
+    text-indent: -9999px;
+}
+
+li.slick-active button {
+    background-color: #00e0d0;
+} */
+
+
+
+/* Banner part end */
+
+
+/* Story part start */
+#story_part {
+    padding: 70px 0;
+
+}
+
+.story_text h3 {
+    /*bold*/
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #413d4b;
+    text-transform: uppercase;
+
+    padding-bottom: 30px;
+}
+
+.story_text p {
+    color: #413d4b;
+    line-height: 22px;
+    font-weight: 300;
+    /*light*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.story_text a {
+    font-weight: 400;
+    /*Regular*/
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 16px;
+
+    padding: 14px 15px;
+    border-radius: 4px;
+    border: 1px solid #00e0d0;
+
+    color: #00e0d0;
+    text-transform: uppercase;
+}
+
+.story_text_second_p {
+    margin: 30px 0;
+}
+
+/* Story part end */
+
+/* Video part start */
+#video_part {
+    background: url(../images/video_part_background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay_video {
+    padding: 200px 0;
+    background: linear-gradient(to right, rgba(9, 5, 47, 0.85), rgba(49, 29, 94, 0.85));
+}
+
+.video_part_text {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    /*black*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+
+    padding-top: 30px;
+
+}
+
+/* Video part end */
+
+
+/* EXPERTISE part start */
+#expertise_part {
+    padding: 70px 0 100px 0;
+}
+
+.expertise_part_header h3 {
+    font-weight: 700;
+    /*bold*/
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #2f2d35;
+
+    padding-bottom: 15px;
+
+}
+
+.expertise_part_header p {
+    /*Regular*/
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: #2f2d35;
+    position: relative;
+
+}
+
+.expertise_part_header p::before {
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+
+    height: 1px;
+    width: 50px;
+    background: #c6c4c9;
+    content: "";
+}
+
+.expertise_item {
+    margin-top: 80px;
+}
+
+.expertise_item img {
+    padding-bottom: 34px;
+
+}
+
+.expertise_item h3 {
+    padding-bottom: 23px;
+
+    color: #413d4b;
+    text-transform: uppercase;
+    font-weight: 900;
+    /*black*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+
+
+}
+
+.expertise_item p {
+
+    color: #333333;
+    line-height: 22px;
+
+    /*Light*/
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+
+    /* break the line of p */
+    padding: 0 95px;
+}
+
+/* EXPERTISE part end */
+
+
+/* Team part start */
+#team_part {
+    background: url(../images/team_part_background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.team_part_overlay {
+    padding: 70px 0;
+    background: linear-gradient(to right, rgba(9, 5, 47, 0.85), rgba(49, 29, 94, 0.85));
+}
+
+.common_heading h3 {
+    /*bold*/
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    padding-bottom: 20px;
+}
+
+.common_heading p {
+    /*Regular*/
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: #ffffff;
+
+    position: relative;
+}
+
+.common_heading p::after {
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    content: "";
+    height: 1px;
+    width: 50px;
+    background: #655c80;
+}
+
+.team_item {
+    margin-top: 100px;
+}
+
+.team_text {
+    border: 1px solid #777589;
+    padding: 22px 62px;
+    background: transparent;
+}
+
+.team_text h3 {
+    /*black*/
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    padding-bottom: 10px;
+}
+
+.team_text p {
+    /*light*/
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: #fafafa;
+    text-transform: uppercase;
+}
+
+/* Team part end */
+
+
+/* Portfolio part start */
+#portfolio_part {
+    padding: 68px 0;
+}
+
+.portfolio_heading h3 {
+    /*bold*/
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #413d4b;
+    text-transform: uppercase;
+
+    padding-bottom: 20px;
+}
+
+.portfolio_heading p {
+    /*Regular*/
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: #2f2d35;
+
+    position: relative;
+}
+
+.portfolio_heading p::after {
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    content: "";
+    height: 1px;
+    width: 50px;
+    background: #c6c4c9;
+}
+
+.upper_porfolio_part {
+    margin-top: 50px;
+}
+
+.portfolio_item {
+    width: 16.66%;
+}
+
+
+/* Portfolio part end */
+
+
+
+
+/* quote part start */
+#quote_part {
+    background: url(../images/quote_part_background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.quote_part_overlay {
+    padding: 120px 0;
+    background: linear-gradient(to right, rgba(9, 5, 47, 0.85), rgba(49, 29, 94, 0.85));
+}
+
+.quote_text i {
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+.quote_text p {
+    /*Regular*/
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    line-height: 26px;
+
+    padding: 0 172px;
+}
+
+.quote_text h3 {
+    /*black*/
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    padding-bottom: 10px;
+    padding-top: 40px;
+}
+
+.quote_text h4 {
+    /*Light*/
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+
+    text-transform: uppercase;
+}
+
+/* quote part end */
+
+
+
+
+/* Contact part start */
+#contact_part {
+    padding: 70px 0;
+}
+
+/* Contact part end */
+
+
+/* Header part start */
+/* Header part end */
+/* Header part start */
+/* Header part end */
+/* Header part start */
+/* Header part end */
+
+/* My CSS end */
